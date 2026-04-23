@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mac DeMarco - Contact</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Mac DeMarco</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Albums.html">Albums</a></li>
+                    <li><a href="interactive.html">Interactive</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="contact-section">
+            <div class="container">
+                <h1 class="section-title">Get In Touch</h1>
+                <p class="contact-intro">Have questions about Mac DeMarco's music, want to share your favorite tracks, or just want to connect with fellow fans? We'd love to hear from you!</p>
+
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h2>Send us a message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="music">Music Discussion</option>
+                                    <option value="concerts">Concerts & Tours</option>
+                                    <option value="recommendations">Song Recommendations</option>
+                                    <option value="feedback">Website Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="favoriteSong">Favorite Mac DeMarco Song</label>
+                                <input type="text" id="favoriteSong" name="favoriteSong" placeholder="What's your favorite track?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us what's on your mind..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>Connect With Us</h2>
+                        <div class="info-item">
+                            <h3>Follow Mac DeMarco</h3>
+                            <p>Stay updated with the latest music, tours, and announcements:</p>
+                            <ul class="social-links">
+                                <li><a href="https://www.instagram.com/macdemarco/" target="_blank">Instagram</a></li>
+                                <li><a href="https://twitter.com/MacDeMarco" target="_blank">Twitter</a></li>
+                                <li><a href="https://macdemarco.bandcamp.com/" target="_blank">Bandcamp</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Fan Community</h3>
+                            <p>Join the conversation with fellow Mac DeMarco fans around the world.</p>
+                            <p><strong>Share your favorite tracks and discover new music!</strong></p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Listen Now</h3>
+                            <p>Stream Mac DeMarco's music on your favorite platform:</p>
+                            <ul class="streaming-links">
+                                <li><a href="https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM" target="_blank">Spotify</a></li>
+                                <li><a href="https://music.apple.com/us/artist/mac-demarco/580487811" target="_blank">Apple Music</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCUC2-VsNLHjZOhG0iJcU7QQ" target="_blank">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Mac DeMarco Fan Site. Not officially affiliated with Mac DeMarco.</p>
+        </footer>
+
+        <script src="contact.js"></script>
+    </body>
+    </html>

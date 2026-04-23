@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mac DeMarco - Interactive</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Mac DeMarco</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Albums.html">Albums</a></li>
+                    <li><a href="interactive.html">Interactive</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="interactive-section">
+            <div class="container">
+                <h1 class="section-title">Interactive Experience</h1>
+
+                <div class="interactive-content">
+                    <div class="music-player-section">
+                        <h2>Mac DeMarco Record Player</h2>
+                        <p>Experience three iconic tracks from Mac DeMarco's discography. Spin the album to seek through the songs!</p>
+
+                        <div class="mainContainer" id="mainContainer">
+                            <div class="album" id="albumArt">
+                                <img src="img/this old dog.jpg" alt="Album Cover" id="albumImg" />
+                            </div>
+
+                            <audio id="audioPlayer" preload="metadata"></audio>
+
+                            <div class="songContainer">
+                                <div class="songDetails" id="songDetails">
+                                    <p class="songName" id="songName">Watching Him Fade Away</p>
+                                    <p class="artists" id="artists">Mac DeMarco</p>
+                                </div>
+
+                                <div class="seekBarContainer" id="seekBarContainer">
+                                    <div class="seekBar" id="seekBar">
+                                        <div class="seekProgress" id="seekProgress">
+                                            <div class="seekHandle" id="seekHandle"></div>
+                                        </div>
+                                    </div>
+                                    <div class="timeDisplay">
+                                        <span id="currentTime">0:00</span>
+                                        <span id="totalTime">2:23</span>
+                                    </div>
+                                </div>
+
+                                <div class="playerControls" id="playerControls">
+                                    <button class="control-btn" id="prevBtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="11 19 2 12 11 5 11 19"></polygon>
+                                            <polygon points="22 19 13 12 22 5 22 19"></polygon>
+                                        </svg>
+                                    </button>
+
+                                    <button class="control-btn" id="playPauseBtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" viewBox="0 0 24 24" stroke="black" stroke-width="2">
+                                            <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                                        </svg>
+                                    </button>
+
+                                    <button class="control-btn" id="nextBtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="13 19 22 12 13 5 13 19"></polygon>
+                                            <polygon points="2 19 11 12 2 5 2 19"></polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-section">
+                        <h2>What's Your Mac DeMarco Personality?</h2>
+                        <p>Take this quiz to discover what kind of Mac DeMarco listener you are based on your favorite song!</p>
+
+                        <div class="quiz-container" id="quizContainer">
+                            <div class="quiz-question">
+                                <h3>Which of these three songs resonates with you the most?</h3>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" data-song="watching">
+                                        <img src="img/this old dog.jpg" alt="This Old Dog" />
+                                        <span>Watching Him Fade Away</span>
+                                        <small>From "This Old Dog" (2017)</small>
+                                    </button>
+                                    <button class="quiz-option" data-song="no-other-heart">
+                                        <img src="img/another one.jpg" alt="Another One" />
+                                        <span>No Other Heart</span>
+                                        <small>From "Another One" (2015)</small>
+                                    </button>
+                                    <button class="quiz-option" data-song="my-kind-of-woman">
+                                        <img src="img/2.jpg" alt="2" />
+                                        <span>My Kind of Woman</span>
+                                        <small>From "This Old Dog" (2017)</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-result" id="quizResult" style="display: none;">
+                            <h3 id="resultTitle">Your Result</h3>
+                            <p id="resultDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Mac DeMarco Fan Site. Not officially affiliated with Mac DeMarco.</p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="quiz.js"></script>
+    </body>
+    </html>
